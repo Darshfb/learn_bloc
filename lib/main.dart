@@ -1,9 +1,11 @@
-import 'package:bloc_intro/screens/home_page.dart';
+import 'package:bloc_intro/posts/posts_page.dart';
+import 'package:bloc_intro/simple_bloc_ovserver.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 void main() {
-  runApp(const MyApp());
+  BlocOverrides.runZoned(() => runApp(const MyApp()),
+      blocObserver: SimpleBlocObserver());
 }
 
 class MyApp extends StatelessWidget {
@@ -17,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomePage(),
+      home: const PostsPage(),
     );
   }
 }
