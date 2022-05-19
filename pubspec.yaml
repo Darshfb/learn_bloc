@@ -41,6 +41,7 @@ dependencies:
   stream_transform: ^2.0.0
   bloc_test: ^9.0.3
   mocktail: ^0.3.0
+  bloc_concurrency: ^0.2.0
 
 dev_dependencies:
   flutter_test:

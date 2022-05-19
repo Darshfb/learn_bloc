@@ -1,9 +1,11 @@
-import 'package:bloc_intro/bloc/time__bloc.dart';
-import 'package:bloc_intro/bloc/timer_event.dart';
-import 'package:bloc_intro/bloc/timer_states.dart';
-import 'package:bloc_intro/ticker.dart';
+
+import 'package:bloc_intro/timer/bloc/timer_event.dart';
+import 'package:bloc_intro/timer/ticker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../bloc/time__bloc.dart';
+import '../bloc/timer_states.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
